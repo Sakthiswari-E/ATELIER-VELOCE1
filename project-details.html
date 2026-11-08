@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sovereign Penthouse Case Study | ATELIER VÉLOCE</title>
+  <meta name="description" content="In-depth architectural case study of The Sovereign Penthouse, Tribeca: 5,400 sq.ft triplex residence with custom bookmatched travertine and smoked oak.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' fill='none'><rect width='36' height='36' rx='4' fill='%23191716'/><path d='M3 7V3H7M29 3H33V7M33 29V33H29M7 33H3V29' stroke='%23C5A880' stroke-width='1' stroke-linecap='round' opacity='0.7'/><path d='M18 5L7.5 28.5H11.8L18 14.5L24.2 28.5H28.5L18 5Z' fill='%23FAF8F5'/><path d='M11 10.5L18 24.5L25 10.5' stroke='%23C5A880' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><circle cx='18' cy='28.5' r='1.2' fill='%23C5A880'/></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <noscript>
+    <style>
+      .reveal, .reveal-left, .reveal-right, .reveal-scale, .img-curtain-reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body class="bg-[#FAF8F5] text-brand-primary dark:bg-[#0D0C0B] dark:text-[#FAF8F5] antialiased selection:bg-brand-secondary selection:text-brand-primary min-h-screen flex flex-col">
+
+  <!-- HEADER & NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-[#FAF8F5]/90 dark:bg-[#0D0C0B]/90 backdrop-blur-sm border-b border-brand-border/40 dark:border-brand-border-dark/40 py-3.5 sm:py-5">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-2 sm:gap-4">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none no-underline">
+          <div class="w-8 h-8 sm:w-10 sm:h-10 bg-brand-primary dark:bg-[#161514] text-[#FAF8F5] border border-brand-primary/80 dark:border-brand-secondary/60 flex items-center justify-center p-1.5 transition-all duration-300 group-hover:border-brand-secondary group-hover:shadow-lg group-hover:shadow-brand-secondary/10 shrink-0">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full transition-transform duration-300 group-hover:scale-105">
+              <path d="M3 7V3H7M29 3H33V7M33 29V33H29M7 33H3V29" stroke="#C5A880" stroke-width="1" stroke-linecap="round" opacity="0.65"/>
+              <path d="M18 5L7.5 28.5H11.8L18 14.5L24.2 28.5H28.5L18 5Z" fill="currentColor"/>
+              <path d="M11 10.5L18 24.5L25 10.5" stroke="#C5A880" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="18" cy="28.5" r="1.2" fill="#C5A880"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-sm xs:text-base sm:text-lg md:text-xl tracking-[0.18em] sm:tracking-[0.24em] font-semibold text-brand-primary dark:text-[#FAF8F5] group-hover:text-brand-secondary transition-colors uppercase leading-tight truncate">
+              ATELIER VÉLOCE
+            </span>
+            <span class="hidden xs:block text-[8px] sm:text-[9px] tracking-[0.28em] sm:tracking-[0.34em] uppercase text-brand-muted dark:text-[#A39B92] font-medium leading-none mt-0.5">
+              Interior Architecture
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center space-x-1 2xl:space-x-4 rtl:space-x-reverse">
+          <div class="relative">
+            <button id="home-dropdown-btn" class="flex items-center gap-1 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+              <span>Home</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="home-dropdown-menu" class="hidden absolute top-full left-0 rtl:left-auto rtl:right-0 w-64 pt-2 z-50 animate-fade-in">
+              <div class="bg-[#FAF8F5] dark:bg-[#161514] border border-brand-border dark:border-brand-border-dark shadow-2xl py-2 divide-y divide-brand-border/40 dark:divide-brand-border-dark/40">
+                <a href="index.html" class="block px-4 py-3 text-xs tracking-wider uppercase text-brand-primary dark:text-[#FAF8F5] hover:bg-brand-secondary/10 transition-colors">
+                  <div>Home 1 – Classic</div>
+                  <div class="text-[10px] text-brand-muted normal-case font-normal">Balanced proportions & grid layout</div>
+                </a>
+                <a href="home-premium.html" class="block px-4 py-3 text-xs tracking-wider uppercase text-brand-primary dark:text-[#FAF8F5] hover:bg-brand-secondary/10 transition-colors">
+                  <div>Home 2 – Premium</div>
+                  <div class="text-[10px] text-brand-muted normal-case font-normal">Editorial & cinematic monograph</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            About Us
+          </a>
+          <a href="services.html" class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            Services
+          </a>
+          <a href="index.html#design-process" class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            Design Process
+          </a>
+          <a href="portfolio.html" class="nav-link-indicator nav-active px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-brand-secondary">
+            Portfolio
+          </a>
+          <a href="contact.html" class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Header Controls & CTAs (Max 2 CTAs) -->
+        <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          <button class="rtl-toggle-btn w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors" title="Toggle RTL / LTR" aria-label="Toggle text direction">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="1.5"/><path stroke-width="1.5" d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </button>
+
+          <button class="theme-toggle-btn w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+            <svg class="theme-icon-sun w-4 h-4 text-brand-secondary hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" stroke-width="1.5"/><path stroke-width="1.5" stroke-linecap="round" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="theme-icon-moon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+
+          <a href="portfolio.html" class="hidden lg:inline-flex btn-secondary !py-2 !px-3 xl:!py-2.5 xl:!px-4 text-[10px] xl:text-[11px] whitespace-nowrap !border-brand-secondary !text-brand-secondary">
+            <span>Lookbook</span>
+          </a>
+
+          <button data-open-consultation class="hidden md:inline-flex btn-primary !py-2 !px-3.5 xl:!py-2.5 xl:!px-5 text-[10px] xl:text-[11px] whitespace-nowrap shrink-0">
+            <span>Consultation</span>
+            <svg class="w-3.5 h-3.5 rtl:rotate-[-90deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </button>
+
+          <button id="mobile-menu-toggle" class="xl:hidden w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary" aria-label="Toggle mobile menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-[#FAF8F5] dark:bg-[#121110] border-b border-brand-border dark:border-brand-border-dark shadow-2xl animate-fade-in max-h-[calc(100dvh-58px)] sm:max-h-[calc(100dvh-70px)] overflow-y-auto overscroll-contain">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+        <div class="border border-brand-border/60 dark:border-brand-border-dark/60 bg-[#F4EFEA] dark:bg-[#181716] p-4">
+          <div class="text-[10px] tracking-widest uppercase text-brand-secondary font-semibold mb-2.5">Home Layouts</div>
+          <div class="grid grid-cols-2 gap-2">
+            <a href="index.html" class="p-2.5 text-xs uppercase tracking-wider text-left rtl:text-right border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] bg-white/50 dark:bg-[#201E1C]">
+              <div class="font-semibold">1. Classic</div>
+              <div class="text-[9px] opacity-75 normal-case">Balanced interior grid</div>
+            </a>
+            <a href="home-premium.html" class="p-2.5 text-xs uppercase tracking-wider text-left rtl:text-right border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] bg-white/50 dark:bg-[#201E1C]">
+              <div class="font-semibold">2. Editorial</div>
+              <div class="text-[9px] opacity-75 normal-case">Cinematic monograph</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
+          <a href="about.html" class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">About Us</a>
+          <a href="services.html" class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Services</a>
+          <a href="index.html#design-process" class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Design Process</a>
+          <a href="portfolio.html" class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-semibold text-brand-secondary bg-brand-secondary/10">Portfolio</a>
+          <a href="contact.html" class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Contact</a>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border dark:border-brand-border-dark flex flex-col sm:flex-row gap-3">
+          <button data-open-consultation class="btn-primary w-full justify-center !py-3.5 text-xs">
+            <span>Book Free Consultation</span>
+          </button>
+          <a href="portfolio.html" class="btn-secondary w-full justify-center !py-3.5 text-xs">
+            <span>Explore Lookbook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="mobile-backdrop" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 xl:hidden"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow space-y-16 sm:space-y-24 pt-32 sm:pt-40 pb-20">
+
+    <!-- 1. BACK NAVIGATION & PROJECT HERO -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="reveal reveal-left flex items-center justify-between border-b border-brand-border dark:border-brand-border-dark pb-4">
+        <a href="portfolio.html" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-brand-muted hover:text-brand-secondary transition-colors no-underline">
+          <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span>Back to Portfolio Lookbook</span>
+        </a>
+
+        <div class="flex items-center gap-4 text-xs font-mono text-brand-muted">
+          <span>Case Study 01 of 06</span>
+        </div>
+      </div>
+
+      <!-- Project Title Block -->
+      <div class="reveal text-left rtl:text-right space-y-4 max-w-4xl">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="px-3 py-1 bg-brand-secondary/15 border border-brand-secondary/30 text-brand-secondary text-xs uppercase tracking-widest font-semibold">
+            Penthouse Architecture
+          </span>
+          <span class="text-xs text-brand-muted font-mono">2025 Handover</span>
+        </div>
+
+        <h1 class="reveal reveal-delay-1 font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] text-brand-primary dark:text-[#FAF8F5]">
+          The Sovereign Penthouse
+        </h1>
+
+        <p class="reveal reveal-delay-2 text-sm sm:text-base text-brand-muted leading-relaxed font-light max-w-3xl">
+          A light-flooded architectural sanctuary above the Tribeca skyline merging Japanese wabi-sabi calmness with Manhattan monumentalism.
+        </p>
+      </div>
+
+      <!-- Hero Full-Width Image with Zoom -->
+      <div class="img-curtain-reveal relative w-full h-[400px] sm:h-[600px] overflow-hidden border border-brand-border dark:border-brand-border-dark shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85" 
+             alt="The Sovereign Penthouse Main Salon" 
+             class="w-full h-full object-cover transition-transform duration-1000 hover:scale-105">
+        
+        <button type="button"
+                data-open-lightbox
+                data-title="The Sovereign Penthouse Main Salon - Tribeca, New York"
+                data-images="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85,https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80,https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1600&q=80,https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80"
+                class="absolute bottom-5 right-5 rtl:right-auto rtl:left-5 bg-black/75 hover:bg-brand-secondary hover:text-brand-primary text-white text-xs uppercase tracking-widest px-4 py-2 flex items-center gap-2 backdrop-blur-sm transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m0-6L10 14M9 21H3v-6m0 6l11-11"/></svg>
+          <span>Examine High-Res Gallery</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. ARCHITECTURAL STATS GRID -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal reveal-scale card-hover-lift bg-[#FAF8F5] dark:bg-[#141312] border border-brand-border dark:border-brand-border-dark p-6 sm:p-10 shadow-sm">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x rtl:divide-x-reverse divide-brand-border/60 dark:divide-brand-border-dark/60 text-left rtl:text-right">
+          <div class="space-y-1">
+            <span class="text-[10px] uppercase tracking-widest text-brand-muted">Location</span>
+            <div class="font-serif text-xl sm:text-2xl text-brand-primary dark:text-[#FAF8F5]">Tribeca, New York</div>
+          </div>
+          <div class="space-y-1 pt-4 sm:pt-0 sm:px-6">
+            <span class="text-[10px] uppercase tracking-widest text-brand-muted">Total Scale</span>
+            <div class="font-serif text-xl sm:text-2xl text-brand-primary dark:text-[#FAF8F5]">5,400 sq.ft</div>
+          </div>
+          <div class="space-y-1 pt-4 sm:pt-0 sm:px-6">
+            <span class="text-[10px] uppercase tracking-widest text-brand-muted">Timeline</span>
+            <div class="font-serif text-xl sm:text-2xl text-brand-primary dark:text-[#FAF8F5]">9 Months Turnkey</div>
+          </div>
+          <div class="space-y-1 pt-4 sm:pt-0 sm:px-6">
+            <span class="text-[10px] uppercase tracking-widest text-brand-muted">Lead Architect</span>
+            <div class="font-serif text-xl sm:text-2xl text-brand-primary dark:text-[#FAF8F5]">Julian Vance, AIA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CASE STUDY BRIEF: CHALLENGE VS. ATELIER SOLUTION -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 text-left rtl:text-right">
+        
+        <div class="reveal reveal-left card-hover-lift lg:col-span-6 bg-[#FAF8F5] dark:bg-[#151413] border border-brand-border dark:border-brand-border-dark p-8 space-y-4">
+          <div class="text-xs uppercase tracking-widest text-brand-secondary font-semibold font-mono">
+            01 / The Architectural Challenge
+          </div>
+          <h3 class="font-serif text-2xl sm:text-3xl text-brand-primary dark:text-[#FAF8F5]">
+            Spatial Obstruction & Fragmented Light
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed font-light">
+            The original floor plan consisted of awkward structural columns and fragmented drywall partitions that completely obstructed panoramic Hudson River vistas. Natural light failed to penetrate into the rear dining corridors.
+          </p>
+        </div>
+
+        <div class="reveal reveal-right reveal-delay-1 card-hover-lift lg:col-span-6 bg-[#FAF8F5] dark:bg-[#151413] border border-brand-border dark:border-brand-border-dark p-8 space-y-4">
+          <div class="text-xs uppercase tracking-widest text-brand-secondary font-semibold font-mono">
+            02 / The Atelier Solution
+          </div>
+          <h3 class="font-serif text-2xl sm:text-3xl text-brand-primary dark:text-[#FAF8F5]">
+            Smoked Oak Colonnades & Open Vistas
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed font-light">
+            We re-engineered structural load points into clad smoked-oak colonnades, opening a 60-foot contiguous living gallery flanked by an open cantilevered marble staircase, Lutron circadian lighting, and custom acoustic ceiling coffers.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. BEFORE & AFTER TRANSFORMATION SLIDER -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal reveal-scale bg-[#F5F2EC] dark:bg-[#131211] p-6 sm:p-12 border border-brand-border dark:border-brand-border-dark space-y-6">
+        <div class="text-left rtl:text-right space-y-2">
+          <span class="text-xs font-semibold tracking-[0.22em] uppercase text-brand-secondary">Structural Contrast</span>
+          <h3 class="font-serif text-2xl sm:text-4xl text-brand-primary dark:text-[#FAF8F5]">Before & After Transformation</h3>
+          <p class="text-xs sm:text-sm text-brand-muted font-light">
+            Drag the divider to observe how raw structural concrete and damaged subfloors became an immaculate high-ceiling living gallery.
+          </p>
+        </div>
+
+        <div class="before-after-container relative w-full h-[380px] sm:h-[520px] overflow-hidden border border-brand-border dark:border-brand-border-dark cursor-ew-resize select-none">
+          <!-- After Image -->
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85" 
+               alt="Completed Sovereign Penthouse" 
+               class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute bottom-4 right-4 rtl:right-auto rtl:left-4 bg-brand-primary/85 text-white px-3 py-1 text-[10px] tracking-widest uppercase">
+            Completed Masterpiece
+          </div>
+
+          <!-- Before Image -->
+          <div class="before-after-overlay absolute inset-0 w-full h-full overflow-hidden" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80" 
+                 alt="Raw Shell Before Renovation" 
+                 class="absolute inset-0 w-full h-full object-cover grayscale contrast-125">
+            <div class="absolute bottom-4 left-4 rtl:left-auto rtl:right-4 bg-black/85 text-white px-3 py-1 text-[10px] tracking-widest uppercase">
+              Pre-Renovation Shell
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="before-after-divider absolute top-0 bottom-0 w-0.5 bg-brand-secondary cursor-ew-resize z-20" style="left: 50%;">
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-brand-secondary text-brand-primary flex items-center justify-center shadow-xl">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CURATED MATERIAL SPECIFICATIONS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-left rtl:text-right">
+      <div class="reveal space-y-1">
+        <span class="text-xs uppercase tracking-widest text-brand-secondary font-semibold">Tactile Provenance</span>
+        <h3 class="font-serif text-3xl sm:text-4xl text-brand-primary dark:text-[#FAF8F5]">Curated Material Specifications</h3>
+        <p class="text-xs text-brand-muted font-light">Authentic noble materials hand-selected for this Tribeca commission.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal card-hover-lift bg-[#FAF8F5] dark:bg-[#151413] border border-brand-border dark:border-brand-border-dark p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="w-5 h-5 rounded-full border border-black/20" style="background-color: #D6CEBF;"></span>
+            <span class="text-[10px] tracking-widest uppercase text-brand-muted font-mono">Natural Stone</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-primary dark:text-[#FAF8F5]">Roman Vein-Cut Travertine</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">Honed matte finish on primary focal fireplace wall and cantilevered stairs.</p>
+        </div>
+
+        <div class="reveal reveal-delay-1 card-hover-lift bg-[#FAF8F5] dark:bg-[#151413] border border-brand-border dark:border-brand-border-dark p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="w-5 h-5 rounded-full border border-black/20" style="background-color: #4A3B32;"></span>
+            <span class="text-[10px] tracking-widest uppercase text-brand-muted font-mono">Architectural Wood</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-primary dark:text-[#FAF8F5]">Fumed Smoked European Oak</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">Wire-brushed acoustic wall paneling, flush doors, and wide-plank flooring.</p>
+        </div>
+
+        <div class="reveal reveal-delay-2 card-hover-lift bg-[#FAF8F5] dark:bg-[#151413] border border-brand-border dark:border-brand-border-dark p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="w-5 h-5 rounded-full border border-black/20" style="background-color: #C5A880;"></span>
+            <span class="text-[10px] tracking-widest uppercase text-brand-muted font-mono">Hardware & Inlays</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-primary dark:text-[#FAF8F5]">Patinated Architectural Brass</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">Hand-aged muted champagne metal trims and bespoke cabinet pulls.</p>
+        </div>
+
+        <div class="reveal reveal-delay-3 card-hover-lift bg-[#FAF8F5] dark:bg-[#151413] border border-brand-border dark:border-brand-border-dark p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="w-5 h-5 rounded-full border border-black/20" style="background-color: #EAE6DE;"></span>
+            <span class="text-[10px] tracking-widest uppercase text-brand-muted font-mono">Textiles</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-primary dark:text-[#FAF8F5]">Raw Belgian Bouclé</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">Custom curved sectional seating upholstery offering tactile warmth.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PHOTO GALLERY & LIGHTBOX GRID -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="reveal flex items-center justify-between">
+        <h3 class="font-serif text-2xl sm:text-3xl text-brand-primary dark:text-[#FAF8F5]">Visual Documentation</h3>
+        <span class="text-xs font-mono text-brand-muted">4 High-Res Photographs</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal img-curtain-reveal card-hover-lift aspect-[4/3] overflow-hidden border border-brand-border dark:border-brand-border-dark group relative cursor-pointer"
+             data-open-lightbox
+             data-title="Living Gallery - The Sovereign Penthouse"
+             data-images="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Living Gallery" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m0-6L10 14M9 21H3v-6m0 6l11-11"/></svg>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1 img-curtain-reveal card-hover-lift aspect-[4/3] overflow-hidden border border-brand-border dark:border-brand-border-dark group relative cursor-pointer"
+             data-open-lightbox
+             data-title="Master Bath Stone Work - The Sovereign Penthouse"
+             data-images="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Master Bath Stone Work" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m0-6L10 14M9 21H3v-6m0 6l11-11"/></svg>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2 img-curtain-reveal card-hover-lift aspect-[4/3] overflow-hidden border border-brand-border dark:border-brand-border-dark group relative cursor-pointer"
+             data-open-lightbox
+             data-title="Dining Salon - The Sovereign Penthouse"
+             data-images="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1600&q=80">
+          <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Dining Salon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m0-6L10 14M9 21H3v-6m0 6l11-11"/></svg>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3 img-curtain-reveal card-hover-lift aspect-[4/3] overflow-hidden border border-brand-border dark:border-brand-border-dark group relative cursor-pointer"
+             data-open-lightbox
+             data-title="Primary Bedroom - The Sovereign Penthouse"
+             data-images="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Primary Bedroom" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m0-6L10 14M9 21H3v-6m0 6l11-11"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CLIENT REFLECTION QUOTE -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal reveal-scale bg-[#181615] text-[#FAF8F5] p-10 sm:p-14 border border-[#2D2A27] text-center space-y-6">
+        <div class="text-xs uppercase tracking-widest text-brand-secondary font-semibold">Client Reflection</div>
+        <p class="font-serif text-xl sm:text-3xl max-w-3xl mx-auto leading-relaxed text-[#FAF8F5] italic font-light">
+          "Atelier Véloce transformed raw structural chaos into the most serene home we have ever experienced. Every sunrise across the Hudson River feels curated specifically for us."
+        </p>
+        <div class="text-xs text-[#A39B92]">
+          <span class="font-semibold text-[#FAF8F5]">Marcus & Elena Sterling</span> — Private Clients, Tribeca Penthouse
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PROJECT SWITCHER (Prev / Next) -->
+    <section class="reveal max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border-t border-brand-border dark:border-brand-border-dark pt-8 flex items-center justify-between">
+        <a href="portfolio.html" class="flex items-center gap-3 text-left rtl:text-right group no-underline">
+          <svg class="w-4 h-4 text-brand-muted group-hover:text-brand-secondary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <div>
+            <span class="text-[10px] uppercase tracking-wider text-brand-muted block">Previous Project</span>
+            <span class="font-serif text-sm sm:text-base text-brand-primary dark:text-[#FAF8F5] group-hover:text-brand-secondary transition-colors">Nordic Smoked Oak Kitchen</span>
+          </div>
+        </a>
+
+        <a href="portfolio.html" class="flex items-center gap-3 text-right rtl:text-left group no-underline">
+          <div>
+            <span class="text-[10px] uppercase tracking-wider text-brand-muted block">Next Project</span>
+            <span class="font-serif text-sm sm:text-base text-brand-primary dark:text-[#FAF8F5] group-hover:text-brand-secondary transition-colors">Verona Monolith Modular Kitchen</span>
+          </div>
+          <svg class="w-4 h-4 text-brand-muted group-hover:text-brand-secondary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/95 p-4 sm:p-8 animate-fade-in">
+    <button id="lightbox-close-btn" class="absolute top-6 right-6 w-10 h-10 border border-white/20 text-white hover:border-brand-secondary hover:text-brand-secondary flex items-center justify-center transition-colors" aria-label="Close lightbox">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <button id="lightbox-prev-btn" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-10 h-10 border border-white/20 text-white hover:border-brand-secondary hover:text-brand-secondary flex items-center justify-center transition-colors" aria-label="Previous image">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+
+    <button id="lightbox-next-btn" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-10 h-10 border border-white/20 text-white hover:border-brand-secondary hover:text-brand-secondary flex items-center justify-center transition-colors" aria-label="Next image">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <div class="max-w-5xl w-full max-h-[85vh] flex flex-col items-center space-y-4">
+      <div class="relative w-full flex justify-center items-center overflow-hidden">
+        <img id="lightbox-img" src="" alt="Enlarged architectural view" class="max-h-[75vh] max-w-full object-contain shadow-2xl border border-white/10">
+      </div>
+      <div class="flex items-center justify-between w-full text-white text-xs px-2">
+        <span id="lightbox-title" class="font-serif text-sm tracking-wide text-brand-secondary">The Sovereign Penthouse</span>
+        <span id="lightbox-counter" class="font-mono text-white/70">1 / 1</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#121110] text-[#FAF8F5] border-t border-[#262422] pt-16 pb-12 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-[#262422]">
+        
+        <div class="lg:col-span-4 space-y-5">
+          <a href="index.html" class="flex items-center gap-3 group select-none no-underline">
+            <div class="w-9 h-9 bg-[#1E1D1B] border border-brand-secondary/70 flex items-center justify-center p-1.5 transition-all duration-300 group-hover:border-brand-secondary shrink-0">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full text-[#FAF8F5]">
+                <path d="M3 7V3H7M29 3H33V7M33 29V33H29M7 33H3V29" stroke="#C5A880" stroke-width="1" stroke-linecap="round" opacity="0.65"/>
+                <path d="M18 5L7.5 28.5H11.8L18 14.5L24.2 28.5H28.5L18 5Z" fill="currentColor"/>
+                <path d="M11 10.5L18 24.5L25 10.5" stroke="#C5A880" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="18" cy="28.5" r="1.2" fill="#C5A880"/>
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif text-base sm:text-lg tracking-[0.22em] font-semibold text-[#FAF8F5] group-hover:text-brand-secondary transition-colors uppercase leading-tight">
+                ATELIER VÉLOCE
+              </span>
+              <span class="text-[9px] tracking-[0.32em] uppercase text-[#A39B92] font-medium mt-0.5">
+                Interior Architecture
+              </span>
+            </div>
+          </a>
+          <p class="text-sm text-[#A39B92] leading-relaxed max-w-sm">
+            An award-winning interior architecture atelier shaping residences of quiet elegance, high-performance workspaces, and bespoke European modular kitchens.
+          </p>
+          <div class="pt-2">
+            <button data-open-consultation class="btn-primary !bg-brand-secondary !text-brand-primary hover:!bg-white">
+              <span>Book Consultation</span>
+              <svg class="w-3.5 h-3.5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-secondary">Studio Architecture</h4>
+          <ul class="space-y-2.5 text-sm text-[#C8C2BA]">
+            <li><a href="index.html" class="hover:text-brand-secondary transition-colors no-underline">Home 1 – Classic Layout</a></li>
+            <li><a href="home-premium.html" class="hover:text-brand-secondary transition-colors no-underline">Home 2 – Premium Editorial</a></li>
+            <li><a href="about.html" class="hover:text-brand-secondary transition-colors no-underline">About Atelier & Team</a></li>
+            <li><a href="services.html" class="hover:text-brand-secondary transition-colors no-underline">Disciplines & Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-brand-secondary transition-colors no-underline text-brand-secondary font-semibold">Portfolio Gallery</a></li>
+            <li><a href="index.html#design-process" class="hover:text-brand-secondary transition-colors no-underline">5-Stage Design Process</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-secondary">Concierge</h4>
+          <div class="space-y-3 text-xs text-[#A39B92] leading-relaxed">
+            <div>742 Fifth Avenue, 18th Floor, New York, NY 10019</div>
+            <div><a href="tel:+12128492400" class="hover:text-[#FAF8F5] transition-colors">+1 (212) 849-2400</a></div>
+            <div><a href="mailto:concierge@atelier-veloce.com" class="hover:text-[#FAF8F5] transition-colors truncate">concierge@atelier-veloce.com</a></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-secondary">Curated Lookbook</h4>
+          <p class="text-xs text-[#A39B92] leading-relaxed">
+            Subscribe to receive our seasonal architectural monographs and material catalogues.
+          </p>
+          <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to our monographs.'); this.reset();" class="space-y-2">
+            <input type="email" placeholder="Enter your email..." required class="w-full bg-[#1A1918] border border-[#33312E] focus:border-brand-secondary text-xs text-[#FAF8F5] px-3.5 py-3 outline-none transition-colors">
+            <button type="submit" class="w-full btn-secondary !border-brand-secondary/50 !text-brand-secondary hover:!bg-brand-secondary hover:!text-brand-primary justify-center text-[10px]">
+              <span>Receive Monographs</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#7A736B] gap-4">
+        <div>© 2026 ATELIER VÉLOCE. All rights reserved. Architectural excellence since 2012.</div>
+        <div class="flex items-center gap-6">
+          <a href="about.html" class="hover:text-brand-secondary transition-colors no-underline">Architectural Integrity</a>
+          <a href="contact.html" class="hover:text-brand-secondary transition-colors no-underline">Private Commissions</a>
+          <a href="404.html" class="hover:text-brand-secondary transition-colors no-underline">System 404</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONSULTATION MODAL -->
+  <div id="consultation-modal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 overflow-y-auto animate-fade-in">
+    <div class="relative w-full max-w-2xl bg-[#FAF8F5] dark:bg-[#161514] border border-brand-border dark:border-brand-border-dark shadow-2xl p-6 sm:p-10 my-8">
+      <button data-close-consultation class="absolute top-6 right-6 w-9 h-9 border border-brand-border dark:border-brand-border-dark flex items-center justify-center hover:border-brand-secondary text-brand-primary dark:text-[#FAF8F5] transition-colors" aria-label="Close modal">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Confirmation View -->
+      <div id="consultation-confirmation" class="hidden text-center py-8 space-y-5 animate-fade-in">
+        <div class="w-16 h-16 rounded-full bg-brand-secondary/20 border border-brand-secondary flex items-center justify-center mx-auto text-brand-secondary">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <div class="space-y-2">
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-secondary">Consultation Request Confirmed</span>
+          <h3 class="font-serif text-2xl sm:text-3xl text-brand-primary dark:text-[#FAF8F5]">We Look Forward to Your Project</h3>
+          <p class="text-xs sm:text-sm text-brand-muted max-w-md mx-auto leading-relaxed">Your private discovery session has been scheduled. Our Principal Architect will review your brief and contact you within 24 hours.</p>
+        </div>
+        <div class="bg-[#F2ECE1] dark:bg-[#201E1C] p-4 border border-brand-secondary/30 max-w-md mx-auto text-left rtl:text-right space-y-1.5 text-xs text-brand-primary dark:text-[#FAF8F5]">
+          <div class="flex justify-between"><span class="text-brand-muted">Reference Code:</span><span id="consultation-ref-display" class="font-mono font-bold text-brand-secondary">AV-849201</span></div>
+          <div class="flex justify-between"><span class="text-brand-muted">Dedicated Oversight:</span><span class="font-medium">Principal Architect Direct Review</span></div>
+        </div>
+        <div class="pt-4 flex justify-center">
+          <button id="consultation-reset-btn" class="btn-primary"><span>Return to Atelier</span></button>
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <form id="consultation-form" class="space-y-4">
+        <div class="mb-6 space-y-1.5 text-left rtl:text-right">
+          <div class="flex items-center gap-2 text-brand-secondary text-xs uppercase tracking-widest font-semibold">
+            <span>Complimentary Architectural Consultation</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl text-brand-primary dark:text-[#FAF8F5]">Begin Your Spatial Transformation</h2>
+          <p class="text-xs text-brand-muted">Share your vision with our architectural team. We will review site viability and material palettes with zero obligation.</p>
+        </div>
+
+        <div class="space-y-4 text-left rtl:text-right">
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Full Name *</label>
+            <input type="text" required placeholder="e.g. Julian Vance" class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Email Address *</label>
+              <input type="email" required placeholder="e.g. client@domain.com" class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Direct Phone *</label>
+              <input type="tel" required placeholder="e.g. +1 (212) 555-0199" class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Project Discipline</label>
+              <select name="projectDiscipline" class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-3.5 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+                <option value="Residential Architecture">Residential Interior Architecture</option>
+                <option value="Commercial Workspaces">Commercial & Executive Workspaces</option>
+                <option value="Modular Kitchens">Luxury Modular Kitchen & Cabinetry</option>
+                <option value="Turnkey Renovation">Complete Turnkey Renovation</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Investment Budget</label>
+              <select class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-3.5 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+                <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+                <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+                <option value="$100,000 - $250,000">$100,000 - $250,000</option>
+                <option value="$250,000+ Bespoke">$250,000+ (Ultra Luxury)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Project Vision & Location (Optional)</label>
+            <textarea rows="3" placeholder="Mention property address or specific material preferences..." class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors resize-none"></textarea>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="btn-primary w-full justify-center">
+            <span>Confirm & Request Consultation</span>
+            <svg class="w-3.5 h-3.5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

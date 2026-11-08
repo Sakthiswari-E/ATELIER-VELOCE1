@@ -1,0 +1,492 @@
+/* Google Fonts - New Luxury Pairing: Playfair Display + Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+/* Lenis Momentum Smooth Scroll Core Styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #191716;
+  --brand-primary-light: #2D2825;
+  --brand-secondary: #C5A880;
+  --brand-secondary-hover: #B89566;
+  --brand-bg: #FAF8F5;
+  --brand-card: #FFFFFF;
+  --brand-border: #E7E2DA;
+  --brand-muted: #8C827A;
+}
+
+html.dark {
+  --brand-primary: #FAF8F5;
+  --brand-primary-light: #E0DDD7;
+  --brand-secondary: #C5A880;
+  --brand-secondary-hover: #D6B890;
+  --brand-bg: #0D0C0B;
+  --brand-card: #151413;
+  --brand-border: #262422;
+  --brand-muted: #A39B92;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--brand-bg);
+  color: var(--brand-primary);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Button Standards per Guidelines */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: #191716;
+  color: #FAF8F5;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #C5A880;
+  color: #191716;
+}
+
+html.dark .btn-primary {
+  background-color: #C5A880;
+  color: #191716;
+}
+
+html.dark .btn-primary:hover {
+  background-color: #FAF8F5;
+  color: #191716;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: transparent;
+  color: #191716;
+  border: 1px solid rgba(25, 23, 22, 0.35);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  border-color: #191716;
+  background-color: #191716;
+  color: #FAF8F5;
+}
+
+html.dark .btn-secondary {
+  color: #FAF8F5;
+  border-color: rgba(197, 168, 128, 0.4);
+}
+
+html.dark .btn-secondary:hover {
+  border-color: #C5A880;
+  background-color: #C5A880;
+  color: #191716;
+}
+
+/* RTL Helpers */
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3EFEA;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #141312;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A880;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B89566;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+/* Image Zoom */
+.zoom-wrap {
+  overflow: hidden;
+}
+
+.zoom-wrap img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoom-wrap:hover img {
+  transform: scale(1.05);
+}
+
+/* Modal overlay display handling */
+#consultation-modal:not(.hidden),
+#lightbox-modal:not(.hidden) {
+  display: flex;
+}
+
+/* =============================================================
+   PREMIUM MOTION & INTERACTION SYSTEM (REFERENCE: NESTSPACE)
+   ============================================================= */
+
+/* 1. Lenis Smooth Scrolling Styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* 2. Interactive Navigation Indicators */
+.nav-link-indicator {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.nav-link-indicator::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background-color: var(--brand-secondary);
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-50%);
+}
+
+.nav-link-indicator:hover::after,
+.nav-link-indicator.nav-active::after {
+  width: 75%;
+}
+
+/* 3. Button Micro-Interactions & Hover Elevation */
+.btn-primary, .btn-secondary {
+  position: relative;
+  will-change: transform, box-shadow;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -6px rgba(197, 168, 128, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -6px rgba(25, 23, 22, 0.16);
+}
+
+html.dark .btn-secondary:hover {
+  box-shadow: 0 8px 20px -6px rgba(197, 168, 128, 0.25);
+}
+
+.btn-secondary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-primary svg, .btn-secondary svg {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover svg, .btn-secondary:hover svg {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .btn-primary:hover svg, [dir="rtl"] .btn-secondary:hover svg {
+  transform: translateX(-4px);
+}
+
+/* 4. Card Hover Lift & Ambient Glow */
+.card-hover-lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -12px rgba(25, 23, 22, 0.12);
+  border-color: rgba(197, 168, 128, 0.6) !important;
+}
+
+html.dark .card-hover-lift:hover {
+  box-shadow: 0 16px 36px -12px rgba(197, 168, 128, 0.18);
+  border-color: rgba(197, 168, 128, 0.7) !important;
+}
+
+/* 5. Bi-Directional Scroll Reveal System */
+/* Progressive enhancement failsafe: if JS is blocked or slow to initialize, keep all content visible */
+html:not(.js-ready) .reveal,
+html:not(.js-ready) .reveal-left,
+html:not(.js-ready) .reveal-right,
+html:not(.js-ready) .reveal-scale,
+html:not(.js-ready) .img-curtain-reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.93);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger Animation Delays */
+.reveal-delay-1 { transition-delay: 80ms; }
+.reveal-delay-2 { transition-delay: 160ms; }
+.reveal-delay-3 { transition-delay: 240ms; }
+.reveal-delay-4 { transition-delay: 320ms; }
+.reveal-delay-5 { transition-delay: 400ms; }
+.reveal-delay-6 { transition-delay: 480ms; }
+
+/* Clean Reverse on Exit */
+.reveal:not(.revealed),
+.reveal-left:not(.revealed),
+.reveal-right:not(.revealed),
+.reveal-scale:not(.revealed) {
+  transition-delay: 0ms !important;
+  transition-duration: 0.38s;
+}
+
+/* RTL Directional Adjustments */
+[dir="rtl"] .reveal-left {
+  transform: translateX(40px);
+}
+[dir="rtl"] .reveal-left.revealed {
+  transform: translateX(0);
+}
+[dir="rtl"] .reveal-right {
+  transform: translateX(-40px);
+}
+[dir="rtl"] .reveal-right.revealed {
+  transform: translateX(0);
+}
+
+/* 6. Architectural Image Mask / Curtain Wipe */
+.img-curtain-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-curtain-reveal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #191716;
+  z-index: 10;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+  pointer-events: none;
+}
+
+html.dark .img-curtain-reveal::after {
+  background-color: #0D0C0B;
+}
+
+.img-curtain-reveal.revealed::after {
+  transform: scaleY(0);
+}
+
+.img-curtain-reveal img {
+  transform: scale(1.08);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-curtain-reveal.revealed img {
+  transform: scale(1);
+}
+
+.img-curtain-reveal:hover img {
+  transform: scale(1.05) !important;
+}
+
+/* 7. Parallax Floating Elements */
+.parallax-subtle {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* 8. Toast Notification System */
+#toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 24rem;
+  width: calc(100% - 3rem);
+  pointer-events: none;
+}
+
+[dir="rtl"] #toast-container {
+  right: auto;
+  left: 1.5rem;
+}
+
+.toast-item {
+  pointer-events: auto;
+  padding: 0.95rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background-color: #191716;
+  color: #FAF8F5;
+  border: 1px solid rgba(197, 168, 128, 0.5);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.35);
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+}
+
+html.dark .toast-item {
+  background-color: #161514;
+  border-color: rgba(197, 168, 128, 0.6);
+}
+
+.toast-item.toast-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* 9. Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal, .reveal-left, .reveal-right, .reveal-scale,
+  .img-curtain-reveal::after {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+

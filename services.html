@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Disciplines | ATELIER VÉLOCE - Interior Architecture</title>
+  <meta name="description"
+    content="Tailored interior architecture disciplines: residential penthouses, executive workspaces, bespoke German-Italian modular kitchens, and turnkey renovation management.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' fill='none'><rect width='36' height='36' rx='4' fill='%23191716'/><path d='M3 7V3H7M29 3H33V7M33 29V33H29M7 33H3V29' stroke='%23C5A880' stroke-width='1' stroke-linecap='round' opacity='0.7'/><path d='M18 5L7.5 28.5H11.8L18 14.5L24.2 28.5H28.5L18 5Z' fill='%23FAF8F5'/><path d='M11 10.5L18 24.5L25 10.5' stroke='%23C5A880' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><circle cx='18' cy='28.5' r='1.2' fill='%23C5A880'/></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <noscript>
+    <style>
+      .reveal,
+      .reveal-left,
+      .reveal-right,
+      .reveal-scale,
+      .img-curtain-reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body
+  class="bg-[#FAF8F5] text-brand-primary dark:bg-[#0D0C0B] dark:text-[#FAF8F5] antialiased selection:bg-brand-secondary selection:text-brand-primary min-h-screen flex flex-col">
+
+  <!-- HEADER & NAVBAR -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-[#FAF8F5]/90 dark:bg-[#0D0C0B]/90 backdrop-blur-sm border-b border-brand-border/40 dark:border-brand-border-dark/40 py-3.5 sm:py-5">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-2 sm:gap-4">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none no-underline">
+          <div
+            class="w-8 h-8 sm:w-10 sm:h-10 bg-brand-primary dark:bg-[#161514] text-[#FAF8F5] border border-brand-primary/80 dark:border-brand-secondary/60 flex items-center justify-center p-1.5 transition-all duration-300 group-hover:border-brand-secondary group-hover:shadow-lg group-hover:shadow-brand-secondary/10 shrink-0">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="w-full h-full transition-transform duration-300 group-hover:scale-105">
+              <path d="M3 7V3H7M29 3H33V7M33 29V33H29M7 33H3V29" stroke="#C5A880" stroke-width="1"
+                stroke-linecap="round" opacity="0.65" />
+              <path d="M18 5L7.5 28.5H11.8L18 14.5L24.2 28.5H28.5L18 5Z" fill="currentColor" />
+              <path d="M11 10.5L18 24.5L25 10.5" stroke="#C5A880" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <circle cx="18" cy="28.5" r="1.2" fill="#C5A880" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="font-serif text-sm xs:text-base sm:text-lg md:text-xl tracking-[0.18em] sm:tracking-[0.24em] font-semibold text-brand-primary dark:text-[#FAF8F5] group-hover:text-brand-secondary transition-colors uppercase leading-tight truncate">
+              ATELIER VÉLOCE
+            </span>
+            <span
+              class="hidden xs:block text-[8px] sm:text-[9px] tracking-[0.28em] sm:tracking-[0.34em] uppercase text-brand-muted dark:text-[#A39B92] font-medium leading-none mt-0.5">
+              Interior Architecture
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center space-x-1 2xl:space-x-4 rtl:space-x-reverse">
+          <div class="relative">
+            <button id="home-dropdown-btn"
+              class="flex items-center gap-1 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+              <span>Home</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="home-dropdown-menu"
+              class="hidden absolute top-full left-0 rtl:left-auto rtl:right-0 w-64 pt-2 z-50 animate-fade-in">
+              <div
+                class="bg-[#FAF8F5] dark:bg-[#161514] border border-brand-border dark:border-brand-border-dark shadow-2xl py-2 divide-y divide-brand-border/40 dark:divide-brand-border-dark/40">
+                <a href="index.html"
+                  class="block px-4 py-3 text-xs tracking-wider uppercase text-brand-primary dark:text-[#FAF8F5] hover:bg-brand-secondary/10 transition-colors">
+                  <div>Home 1 – Classic</div>
+                  <div class="text-[10px] text-brand-muted normal-case font-normal">Balanced proportions & grid layout
+                  </div>
+                </a>
+                <a href="home-premium.html"
+                  class="block px-4 py-3 text-xs tracking-wider uppercase text-brand-primary dark:text-[#FAF8F5] hover:bg-brand-secondary/10 transition-colors">
+                  <div>Home 2 – Premium</div>
+                  <div class="text-[10px] text-brand-muted normal-case font-normal">Editorial & cinematic monograph
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html"
+            class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            About Us
+          </a>
+          <a href="services.html"
+            class="nav-link-indicator px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-brand-secondary">
+            Services
+          </a>
+          <a href="index.html#design-process"
+            class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            Design Process
+          </a>
+          <a href="portfolio.html"
+            class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            Portfolio
+          </a>
+          <a href="contact.html"
+            class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Header Controls & CTAs (Max 2 CTAs) -->
+        <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          <button
+            class="rtl-toggle-btn w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors"
+            title="Toggle RTL / LTR" aria-label="Toggle text direction">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke-width="1.5" />
+              <path stroke-width="1.5"
+                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </button>
+
+          <button
+            class="theme-toggle-btn w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors"
+            title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+            <svg class="theme-icon-sun w-4 h-4 text-brand-secondary hidden" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5" stroke-width="1.5" />
+              <path stroke-width="1.5" stroke-linecap="round"
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+            <svg class="theme-icon-moon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <a href="portfolio.html"
+            class="hidden lg:inline-flex btn-secondary !py-2 !px-3 xl:!py-2.5 xl:!px-4 text-[10px] xl:text-[11px] whitespace-nowrap">
+            <span>Lookbook</span>
+          </a>
+
+          <button data-open-consultation
+            class="hidden md:inline-flex btn-primary !py-2 !px-3.5 xl:!py-2.5 xl:!px-5 text-[10px] xl:text-[11px] whitespace-nowrap shrink-0">
+            <span>Consultation</span>
+            <svg class="w-3.5 h-3.5 rtl:rotate-[-90deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </button>
+
+          <button id="mobile-menu-toggle"
+            class="xl:hidden w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary"
+            aria-label="Toggle mobile menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu"
+      class="hidden xl:hidden bg-[#FAF8F5] dark:bg-[#121110] border-b border-brand-border dark:border-brand-border-dark shadow-2xl animate-fade-in max-h-[calc(100dvh-58px)] sm:max-h-[calc(100dvh-70px)] overflow-y-auto overscroll-contain">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+        <div class="border border-brand-border/60 dark:border-brand-border-dark/60 bg-[#F4EFEA] dark:bg-[#181716] p-4">
+          <div class="text-[10px] tracking-widest uppercase text-brand-secondary font-semibold mb-2.5">Home Layouts
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <a href="index.html"
+              class="p-2.5 text-xs uppercase tracking-wider text-left rtl:text-right border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] bg-white/50 dark:bg-[#201E1C]">
+              <div class="font-semibold">1. Classic</div>
+              <div class="text-[9px] opacity-75 normal-case">Balanced interior grid</div>
+            </a>
+            <a href="home-premium.html"
+              class="p-2.5 text-xs uppercase tracking-wider text-left rtl:text-right border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] bg-white/50 dark:bg-[#201E1C]">
+              <div class="font-semibold">2. Editorial</div>
+              <div class="text-[9px] opacity-75 normal-case">Cinematic monograph</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
+          <a href="about.html"
+            class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">About
+            Us</a>
+          <a href="services.html"
+            class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-semibold text-brand-secondary bg-brand-secondary/10">Services</a>
+          <a href="index.html#design-process"
+            class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Design
+            Process</a>
+          <a href="portfolio.html"
+            class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Portfolio</a>
+          <a href="contact.html"
+            class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Contact</a>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border dark:border-brand-border-dark flex flex-col sm:flex-row gap-3">
+          <button data-open-consultation class="btn-primary w-full justify-center !py-3.5 text-xs">
+            <span>Book Free Consultation</span>
+          </button>
+          <a href="portfolio.html" class="btn-secondary w-full justify-center !py-3.5 text-xs">
+            <span>Explore Lookbook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="mobile-backdrop" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 xl:hidden"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow space-y-24 sm:space-y-32 pt-32 sm:pt-40 pb-20">
+
+    <!-- 1. HERO HEADER -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-left rtl:text-right">
+      <div
+        class="reveal reveal-left inline-flex items-center gap-2 px-3 py-1 bg-brand-secondary/15 border border-brand-secondary/30 text-brand-secondary text-xs font-semibold tracking-widest uppercase">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <polygon points="12 2 2 7 12 12 22 7 12 2" stroke-width="1.5" />
+          <polyline points="2 17 12 22 22 17" stroke-width="1.5" />
+          <polyline points="2 12 12 17 22 12" stroke-width="1.5" />
+        </svg>
+        <span>Architectural Disciplines</span>
+      </div>
+
+      <h1
+        class="reveal reveal-left reveal-delay-1 font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] text-brand-primary dark:text-[#FAF8F5] max-w-4xl">
+        Bespoke Disciplines <br>
+        <span class="italic font-light text-brand-secondary">& Turnkey Precision</span>
+      </h1>
+
+      <p
+        class="reveal reveal-left reveal-delay-2 text-sm sm:text-base text-brand-muted leading-relaxed max-w-3xl font-light">
+        From Manhattan high-rise penthouses to Northern Italian modular kitchens, our multidisciplinary studio delivers
+        comprehensive architectural execution, precision fabrication, and white-glove site delivery.
+      </p>
+    </section>
+
+    <!-- 2. FOUR CORE DISCIPLINES DETAILED CARDS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- Discipline 1: Residential Architecture -->
+      <div
+        class="reveal reveal-left card-hover-lift grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center border border-brand-border dark:border-brand-border-dark bg-[#FAF8F5] dark:bg-[#141312] p-6 sm:p-10">
+        <div
+          class="img-curtain-reveal lg:col-span-6 relative overflow-hidden border border-brand-border dark:border-brand-border-dark group">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
+            alt="Residential Interior Architecture"
+            class="w-full h-[360px] sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute bottom-4 left-4 rtl:left-auto rtl:right-4 bg-brand-primary/90 text-white px-3 py-1 text-[10px] tracking-widest uppercase z-20">
+            Discipline 01
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-4 text-left rtl:text-right">
+          <span class="text-xs uppercase tracking-widest text-brand-secondary font-semibold">Residential
+            Architecture</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brand-primary dark:text-[#FAF8F5]">Penthouses & Private
+            Estates</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed font-light">
+            Comprehensive spatial reconfigurations, structural partition removals, and custom architectural envelopment.
+            We orchestrate natural light corridors, acoustic insulation, and noble materials to construct peaceful
+            private sanctuaries.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs">
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>3D LiDAR Laser Site Scans</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Bookmatched Stone & Travertine</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Acoustic Fumed Timber Ceilings</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Lutron Circadian Lighting Sets</span>
+            </div>
+          </div>
+
+          <div
+            class="pt-4 flex items-center justify-between border-t border-brand-border/60 dark:border-brand-border-dark/60">
+            <span class="font-serif text-lg text-brand-secondary">From $50,000 Scope</span>
+            <button data-open-consultation class="btn-primary !py-2.5 !px-4 text-xs">
+              <span>Commission Residence</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Discipline 2: Modular Kitchens -->
+      <div
+        class="reveal reveal-right card-hover-lift grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center border border-brand-border dark:border-brand-border-dark bg-[#FAF8F5] dark:bg-[#141312] p-6 sm:p-10">
+        <div class="lg:col-span-6 space-y-4 text-left rtl:text-right order-2 lg:order-1">
+          <span class="text-xs uppercase tracking-widest text-brand-secondary font-semibold">Modular Kitchen &
+            Joinery</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brand-primary dark:text-[#FAF8F5]">German-Italian Culinary
+            Architecture</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed font-light">
+            Engineered modular systems manufactured with 0.5mm tolerances in Germany and Northern Italy. We combine
+            tactile natural timber veneers, monolithic mitered stone islands, and motorized pocket pantries with
+            professional culinary ergonomics.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs">
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Blum Servo-Drive Motorized Drawers</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Integrated Gaggenau Appliances</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>18mm Marine Core Carcasses</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>10-Year Comprehensive Warranty</span>
+            </div>
+          </div>
+
+          <div
+            class="pt-4 flex items-center justify-between border-t border-brand-border/60 dark:border-brand-border-dark/60">
+            <span class="font-serif text-lg text-brand-secondary">From $40,000 Kitchen Suite</span>
+            <button data-open-consultation class="btn-primary !py-2.5 !px-4 text-xs">
+              <span>Commission Kitchen</span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="img-curtain-reveal lg:col-span-6 relative overflow-hidden border border-brand-border dark:border-brand-border-dark group order-1 lg:order-2">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80"
+            alt="Luxury Modular Kitchen"
+            class="w-full h-[360px] sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute bottom-4 right-4 rtl:right-auto rtl:left-4 bg-brand-primary/90 text-white px-3 py-1 text-[10px] tracking-widest uppercase z-20">
+            Discipline 02
+          </div>
+        </div>
+      </div>
+
+      <!-- Discipline 3: Commercial & Executive Workspaces -->
+      <div
+        class="reveal reveal-left card-hover-lift grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center border border-brand-border dark:border-brand-border-dark bg-[#FAF8F5] dark:bg-[#141312] p-6 sm:p-10">
+        <div
+          class="img-curtain-reveal lg:col-span-6 relative overflow-hidden border border-brand-border dark:border-brand-border-dark group">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+            alt="Commercial Executive Workspaces"
+            class="w-full h-[360px] sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute bottom-4 left-4 rtl:left-auto rtl:right-4 bg-brand-primary/90 text-white px-3 py-1 text-[10px] tracking-widest uppercase z-20">
+            Discipline 03
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-4 text-left rtl:text-right">
+          <span class="text-xs uppercase tracking-widest text-brand-secondary font-semibold">Commercial
+            Workspaces</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brand-primary dark:text-[#FAF8F5]">Executive Suites &
+            Headquarters</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed font-light">
+            High-performance commercial interiors tailored for venture capitals, legal chambers, and creative agency
+            flagships. We balance acoustic micro-zones for cognitive deep work with hospitable boardrooms and
+            collaborative salons.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs">
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>NRC 0.85 Acoustic Baffle Ceilings</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Integrated Hidden AV Infrastructure</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Tenant Improvement (TI) Test-Fits</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Commercial Building Board Approvals</span>
+            </div>
+          </div>
+
+          <div
+            class="pt-4 flex items-center justify-between border-t border-brand-border/60 dark:border-brand-border-dark/60">
+            <span class="font-serif text-lg text-brand-secondary">From $35,000 Workplace</span>
+            <button data-open-consultation class="btn-primary !py-2.5 !px-4 text-xs">
+              <span>Commission Workplace</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Discipline 4: Turnkey Renovation Management -->
+      <div
+        class="reveal reveal-right card-hover-lift grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center border border-brand-border dark:border-brand-border-dark bg-[#FAF8F5] dark:bg-[#141312] p-6 sm:p-10">
+        <div class="lg:col-span-6 space-y-4 text-left rtl:text-right order-2 lg:order-1">
+          <span class="text-xs uppercase tracking-widest text-brand-secondary font-semibold">Turnkey Execution</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brand-primary dark:text-[#FAF8F5]">Single-Point Construction
+            Governance</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed font-light">
+            Eliminate renovation friction. Our turnkey management oversees every trade on site: general contractors,
+            stone carvers, MEP engineers, and municipal building examiners under a strict single-point contract.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs">
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Guaranteed Fixed-Price Contract</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Dedicated On-Site Project Engineer</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Weekly Digital HD Progress Reports</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>White-Glove Turnkey Handover</span>
+            </div>
+          </div>
+
+          <div
+            class="pt-4 flex items-center justify-between border-t border-brand-border/60 dark:border-brand-border-dark/60">
+            <span class="font-serif text-lg text-brand-secondary">From $60,000 Turnkey</span>
+            <button data-open-consultation class="btn-primary !py-2.5 !px-4 text-xs">
+              <span>Commission Turnkey</span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="img-curtain-reveal lg:col-span-6 relative overflow-hidden border border-brand-border dark:border-brand-border-dark group order-1 lg:order-2">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
+            alt="Turnkey Renovation Management"
+            class="w-full h-[360px] sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute bottom-4 right-4 rtl:right-auto rtl:left-4 bg-brand-primary/90 text-white px-3 py-1 text-[10px] tracking-widest uppercase z-20">
+            Discipline 04
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. THREE-TIER PRICING PACKAGES (Complying with Guideline 9: Popular = Primary btn, others = Secondary btn) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="reveal text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs uppercase tracking-widest text-brand-secondary font-semibold">Transparent Investment</span>
+        <h2 class="font-serif text-3xl sm:text-5xl text-brand-primary dark:text-[#FAF8F5]">
+          Architectural Pricing Tiers
+        </h2>
+        <p class="text-xs sm:text-sm text-brand-muted font-light">
+          Calibrated scopes structured for clarity. Fixed-fee architectural phases with zero hidden markups.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+        <!-- Tier 1: Essential Curation (Guideline 9: Secondary Button) -->
+        <div
+          class="reveal reveal-left card-hover-lift bg-[#FAF8F5] dark:bg-[#141312] border border-brand-border dark:border-brand-border-dark p-8 flex flex-col justify-between space-y-8 transition-all hover:border-brand-secondary">
+          <div class="space-y-4 text-left rtl:text-right">
+            <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-muted block">Tier 01 /
+              Advisory</span>
+            <h3 class="font-serif text-2xl text-brand-primary dark:text-[#FAF8F5]">Essential Curation</h3>
+            <p class="text-xs text-brand-muted leading-relaxed font-light">
+              Ideal for clients with their own builder who require visionary spatial planning, material schedules, and
+              lighting elevations.
+            </p>
+            <div class="pt-2">
+              <span class="font-serif text-4xl font-normal text-brand-primary dark:text-[#FAF8F5]">$18,500</span>
+              <span class="text-xs text-brand-muted"> / scope fixed</span>
+            </div>
+
+            <ul
+              class="space-y-3 pt-4 border-t border-brand-border/60 dark:border-brand-border-dark/60 text-xs text-brand-primary dark:text-[#FAF8F5]">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Comprehensive 2D Space Layouts</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>3 Key Spaces Photorealistic 3D Renders</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Curated Physical Material Box</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Lighting & Electrical Drawings</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Direct Wholesale Trade Discount Access</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <!-- Secondary Button per Guideline 9 -->
+            <button data-open-consultation class="btn-secondary w-full justify-center">
+              <span>Select Essential Curation</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 2: Signature Turnkey (POPULAR PLAN - Guideline 9: Primary Button) -->
+        <div
+          class="reveal reveal-scale reveal-delay-1 card-hover-lift relative bg-[#FAF8F5] dark:bg-[#181716] border-2 border-brand-secondary p-8 flex flex-col justify-between space-y-8 shadow-2xl">
+          <!-- Popular Badge -->
+          <div
+            class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-secondary text-brand-primary px-4 py-1 text-[10px] tracking-widest uppercase font-bold shadow-md">
+            Most Popular Tier
+          </div>
+
+          <div class="space-y-4 text-left rtl:text-right pt-2">
+            <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-secondary block">Tier 02 / Full
+              Architectural</span>
+            <h3 class="font-serif text-2xl text-brand-primary dark:text-[#FAF8F5]">Signature Turnkey</h3>
+            <p class="text-xs text-brand-muted leading-relaxed font-light">
+              Our flagship comprehensive commission. From demolition to bespoke joinery, stone installations, and
+              white-glove handover.
+            </p>
+            <div class="pt-2">
+              <span class="font-serif text-4xl font-normal text-brand-secondary">$48,000</span>
+              <span class="text-xs text-brand-muted"> / scope fixed</span>
+            </div>
+
+            <ul
+              class="space-y-3 pt-4 border-t border-brand-secondary/30 text-xs text-brand-primary dark:text-[#FAF8F5]">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Full Architectural Construction Sets & BIM</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Complete 4K Photorealistic Digital Twins</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>On-Site Engineer Daily Supervision</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>European Quarry Direct Stone Sourcing</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>10-Year Studio Warranty & Post-Occupancy</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <!-- Primary Button per Guideline 9 -->
+            <button data-open-consultation
+              class="btn-primary w-full justify-center !bg-brand-secondary !text-brand-primary hover:!bg-white">
+              <span>Select Signature Turnkey</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 3: Haute Couture Living (Guideline 9: Secondary Button) -->
+        <div
+          class="reveal reveal-right reveal-delay-2 card-hover-lift bg-[#FAF8F5] dark:bg-[#141312] border border-brand-border dark:border-brand-border-dark p-8 flex flex-col justify-between space-y-8 transition-all hover:border-brand-secondary">
+          <div class="space-y-4 text-left rtl:text-right">
+            <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-muted block">Tier 03 /
+              Sovereign</span>
+            <h3 class="font-serif text-2xl text-brand-primary dark:text-[#FAF8F5]">Haute Couture Living</h3>
+            <p class="text-xs text-brand-muted leading-relaxed font-light">
+              Unrestricted bespoke realization for palatial penthouses and multi-level estates with direct partner
+              involvement.
+            </p>
+            <div class="pt-2">
+              <span class="font-serif text-4xl font-normal text-brand-primary dark:text-[#FAF8F5]">$95,000+</span>
+              <span class="text-xs text-brand-muted"> / custom scope</span>
+            </div>
+
+            <ul
+              class="space-y-3 pt-4 border-t border-brand-border/60 dark:border-brand-border-dark/60 text-xs text-brand-primary dark:text-[#FAF8F5]">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Direct Founding Partner Lead Oversight</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Carrara Quarry Personal Slab Inspection</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>One-of-a-Kind Furniture Sculptures</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Global Blue-Chip Art Advisory & Framing</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-3.5 h-3.5 text-brand-secondary shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Lifetime Concierge Aftercare</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <!-- Secondary Button per Guideline 9 -->
+            <button data-open-consultation class="btn-secondary w-full justify-center">
+              <span>Commission Haute Couture</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. CALL TO ACTION (Center aligned per Rule 4) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="reveal reveal-scale bg-[#191716] text-[#FAF8F5] p-10 sm:p-16 border border-[#2D2A27] text-center space-y-6">
+        <div
+          class="inline-flex items-center gap-2 text-brand-secondary text-xs uppercase tracking-widest font-semibold">
+          <span>Complimentary Scope Assessment</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-normal max-w-2xl mx-auto leading-tight">
+          Discuss Your Property with Our Principal Architect
+        </h2>
+        <p class="text-xs sm:text-sm text-[#A39B92] max-w-md mx-auto leading-relaxed font-light">
+          We provide preliminary floorplan analysis, budgetary breakdowns, and feasibility reports without financial
+          commitment.
+        </p>
+        <div class="pt-2 flex flex-wrap justify-center gap-4">
+          <button data-open-consultation class="btn-primary !bg-brand-secondary !text-brand-primary hover:!bg-white">
+            <span>Schedule Free Consultation</span>
+            <svg class="w-3.5 h-3.5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+          <a href="index.html#cost-estimator"
+            class="btn-secondary !border-white/40 !text-white hover:!bg-white hover:!text-brand-primary">
+            <span>Use Cost Estimator</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#121110] text-[#FAF8F5] border-t border-[#262422] pt-16 pb-12 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-[#262422]">
+
+        <div class="lg:col-span-4 space-y-5">
+          <a href="index.html" class="flex items-center gap-3 group select-none no-underline">
+            <div
+              class="w-9 h-9 bg-[#1E1D1B] border border-brand-secondary/70 flex items-center justify-center p-1.5 transition-all duration-300 group-hover:border-brand-secondary shrink-0">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="w-full h-full text-[#FAF8F5]">
+                <path d="M3 7V3H7M29 3H33V7M33 29V33H29M7 33H3V29" stroke="#C5A880" stroke-width="1"
+                  stroke-linecap="round" opacity="0.65" />
+                <path d="M18 5L7.5 28.5H11.8L18 14.5L24.2 28.5H28.5L18 5Z" fill="currentColor" />
+                <path d="M11 10.5L18 24.5L25 10.5" stroke="#C5A880" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="18" cy="28.5" r="1.2" fill="#C5A880" />
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="font-serif text-base sm:text-lg tracking-[0.22em] font-semibold text-[#FAF8F5] group-hover:text-brand-secondary transition-colors uppercase leading-tight">
+                ATELIER VÉLOCE
+              </span>
+              <span class="text-[9px] tracking-[0.32em] uppercase text-[#A39B92] font-medium mt-0.5">
+                Interior Architecture
+              </span>
+            </div>
+          </a>
+          <p class="text-sm text-[#A39B92] leading-relaxed max-w-sm">
+            An award-winning interior architecture atelier shaping residences of quiet elegance, high-performance
+            workspaces, and bespoke European modular kitchens.
+          </p>
+          <div class="pt-2">
+            <button data-open-consultation class="btn-primary !bg-brand-secondary !text-brand-primary hover:!bg-white">
+              <span>Book Consultation</span>
+              <svg class="w-3.5 h-3.5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-secondary">Studio Architecture</h4>
+          <ul class="space-y-2.5 text-sm text-[#C8C2BA]">
+            <li><a href="index.html" class="hover:text-brand-secondary transition-colors no-underline">Home 1 – Classic
+                Layout</a></li>
+            <li><a href="home-premium.html" class="hover:text-brand-secondary transition-colors no-underline">Home 2 –
+                Premium Editorial</a></li>
+            <li><a href="about.html" class="hover:text-brand-secondary transition-colors no-underline">About Atelier &
+                Team</a></li>
+            <li><a href="services.html"
+                class="hover:text-brand-secondary transition-colors no-underline text-brand-secondary font-semibold">Disciplines
+                & Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-brand-secondary transition-colors no-underline">Portfolio
+                Gallery</a></li>
+            <li><a href="index.html#design-process"
+                class="hover:text-brand-secondary transition-colors no-underline">5-Stage Design Process</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-secondary">Concierge</h4>
+          <div class="space-y-3 text-xs text-[#A39B92] leading-relaxed">
+            <div>742 Fifth Avenue, 18th Floor, New York, NY 10019</div>
+            <div><a href="tel:+12128492400" class="hover:text-[#FAF8F5] transition-colors">+1 (212) 849-2400</a></div>
+            <div><a href="mailto:concierge@atelier-veloce.com"
+                class="hover:text-[#FAF8F5] transition-colors truncate">concierge@atelier-veloce.com</a></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-secondary">Curated Lookbook</h4>
+          <p class="text-xs text-[#A39B92] leading-relaxed">
+            Subscribe to receive our seasonal architectural monographs and material catalogues.
+          </p>
+          <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to our monographs.'); this.reset();"
+            class="space-y-2">
+            <input type="email" placeholder="Enter your email..." required
+              class="w-full bg-[#1A1918] border border-[#33312E] focus:border-brand-secondary text-xs text-[#FAF8F5] px-3.5 py-3 outline-none transition-colors">
+            <button type="submit"
+              class="w-full btn-secondary !border-brand-secondary/50 !text-brand-secondary hover:!bg-brand-secondary hover:!text-brand-primary justify-center text-[10px]">
+              <span>Receive Monographs</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#7A736B] gap-4">
+        <div>© 2026 ATELIER VÉLOCE. All rights reserved. Architectural excellence since 2012.</div>
+        <div class="flex items-center gap-6">
+          <a href="about.html" class="hover:text-brand-secondary transition-colors no-underline">Architectural
+            Integrity</a>
+          <a href="contact.html" class="hover:text-brand-secondary transition-colors no-underline">Private
+            Commissions</a>
+          <a href="404.html" class="hover:text-brand-secondary transition-colors no-underline">System 404</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONSULTATION MODAL -->
+  <div id="consultation-modal"
+    class="hidden fixed inset-0 z-50 items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 overflow-y-auto animate-fade-in">
+    <div
+      class="relative w-full max-w-2xl bg-[#FAF8F5] dark:bg-[#161514] border border-brand-border dark:border-brand-border-dark shadow-2xl p-6 sm:p-10 my-8">
+      <button data-close-consultation
+        class="absolute top-6 right-6 w-9 h-9 border border-brand-border dark:border-brand-border-dark flex items-center justify-center hover:border-brand-secondary text-brand-primary dark:text-[#FAF8F5] transition-colors"
+        aria-label="Close modal">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Confirmation View -->
+      <div id="consultation-confirmation" class="hidden text-center py-8 space-y-5 animate-fade-in">
+        <div
+          class="w-16 h-16 rounded-full bg-brand-secondary/20 border border-brand-secondary flex items-center justify-center mx-auto text-brand-secondary">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <div class="space-y-2">
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-secondary">Consultation Request
+            Confirmed</span>
+          <h3 class="font-serif text-2xl sm:text-3xl text-brand-primary dark:text-[#FAF8F5]">We Look Forward to Your
+            Project</h3>
+          <p class="text-xs sm:text-sm text-brand-muted max-w-md mx-auto leading-relaxed">Your private discovery session
+            has been scheduled. Our Principal Architect will review your brief and contact you within 24 hours.</p>
+        </div>
+        <div
+          class="bg-[#F2ECE1] dark:bg-[#201E1C] p-4 border border-brand-secondary/30 max-w-md mx-auto text-left rtl:text-right space-y-1.5 text-xs text-brand-primary dark:text-[#FAF8F5]">
+          <div class="flex justify-between"><span class="text-brand-muted">Reference Code:</span><span
+              id="consultation-ref-display" class="font-mono font-bold text-brand-secondary">AV-849201</span></div>
+          <div class="flex justify-between"><span class="text-brand-muted">Dedicated Oversight:</span><span
+              class="font-medium">Principal Architect Direct Review</span></div>
+        </div>
+        <div class="pt-4 flex justify-center">
+          <button id="consultation-reset-btn" class="btn-primary"><span>Return to Atelier</span></button>
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <form id="consultation-form" class="space-y-4">
+        <div class="mb-6 space-y-1.5 text-left rtl:text-right">
+          <div class="flex items-center gap-2 text-brand-secondary text-xs uppercase tracking-widest font-semibold">
+            <span>Complimentary Architectural Consultation</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl text-brand-primary dark:text-[#FAF8F5]">Begin Your Spatial
+            Transformation</h2>
+          <p class="text-xs text-brand-muted">Share your vision with our architectural team. We will review site
+            viability and material palettes with zero obligation.</p>
+        </div>
+
+        <div class="space-y-4 text-left rtl:text-right">
+          <div>
+            <label
+              class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Full
+              Name *</label>
+            <input type="text" required placeholder="e.g. Julian Vance"
+              class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label
+                class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Email
+                Address *</label>
+              <input type="email" required placeholder="e.g. client@domain.com"
+                class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+            </div>
+            <div>
+              <label
+                class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Direct
+                Phone *</label>
+              <input type="tel" required placeholder="e.g. +1 (212) 555-0199"
+                class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label
+                class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Project
+                Discipline</label>
+              <select name="projectDiscipline"
+                class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-3.5 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+                <option value="Residential Architecture">Residential Interior Architecture</option>
+                <option value="Commercial Workspaces">Commercial & Executive Workspaces</option>
+                <option value="Modular Kitchens">Luxury Modular Kitchen & Cabinetry</option>
+                <option value="Turnkey Renovation">Complete Turnkey Renovation</option>
+              </select>
+            </div>
+            <div>
+              <label
+                class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Investment
+                Budget</label>
+              <select
+                class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-3.5 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors">
+                <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+                <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+                <option value="$100,000 - $250,000">$100,000 - $250,000</option>
+                <option value="$250,000+ Bespoke">$250,000+ (Ultra Luxury)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label
+              class="block text-[11px] font-semibold uppercase tracking-wider text-brand-primary dark:text-[#FAF8F5] mb-1.5">Project
+              Vision & Location (Optional)</label>
+            <textarea rows="3" placeholder="Mention property address or specific material preferences..."
+              class="w-full bg-white dark:bg-[#1E1D1B] border border-brand-border dark:border-brand-border-dark px-4 py-2.5 text-xs text-brand-primary dark:text-[#FAF8F5] outline-none focus:border-brand-secondary transition-colors resize-none"></textarea>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="btn-primary w-full justify-center">
+            <span>Confirm & Request Consultation</span>
+            <svg class="w-3.5 h-3.5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
