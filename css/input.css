@@ -60,77 +60,152 @@ body {
 h1, h2, h3, h4, .font-serif {
   font-family: 'Playfair Display', Georgia, serif;
   letter-spacing: -0.015em;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+p, span, a, label, li, dt, dd, blockquote {
+  overflow-wrap: break-word;
+}
+
+/* Fluid responsive headings using clamp() */
+h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3.8vw + 0.6rem, 3rem);
+  line-height: 1.18;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2.25rem);
+  line-height: 1.25;
+}
+
+/* Estimator Project Discipline Responsive Grid */
+.estimator-discipline-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 360px) {
+  .estimator-discipline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 640px) {
+  .estimator-discipline-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.estimator-discipline-btn {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* Media and container safeguards */
+img, video, canvas, iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .tracking-widest {
+    letter-spacing: 0.14em !important;
+  }
+  .tracking-ultra {
+    letter-spacing: 0.18em !important;
+  }
+}
+
+@layer utilities {
+  .hidden {
+    display: none !important;
+  }
 }
 
 /* Button Standards per Guidelines */
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.6rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  background-color: #191716;
-  color: #FAF8F5;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border-radius: 0;
-  text-decoration: none;
-}
+@layer components {
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.6rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: #191716;
+    color: #FAF8F5;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0;
+    text-decoration: none;
+  }
 
-.btn-primary:hover {
-  background-color: #C5A880;
-  color: #191716;
-}
+  .btn-primary:hover {
+    background-color: #C5A880;
+    color: #191716;
+  }
 
-html.dark .btn-primary {
-  background-color: #C5A880;
-  color: #191716;
-}
+  html.dark .btn-primary {
+    background-color: #C5A880;
+    color: #191716;
+  }
 
-html.dark .btn-primary:hover {
-  background-color: #FAF8F5;
-  color: #191716;
-}
+  html.dark .btn-primary:hover {
+    background-color: #FAF8F5;
+    color: #191716;
+  }
 
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.6rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  background-color: transparent;
-  color: #191716;
-  border: 1px solid rgba(25, 23, 22, 0.35);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border-radius: 0;
-  text-decoration: none;
-}
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.6rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: transparent;
+    color: #191716;
+    border: 1px solid rgba(25, 23, 22, 0.35);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0;
+    text-decoration: none;
+  }
 
-.btn-secondary:hover {
-  border-color: #191716;
-  background-color: #191716;
-  color: #FAF8F5;
-}
+  .btn-secondary:hover {
+    border-color: #191716;
+    background-color: #191716;
+    color: #FAF8F5;
+  }
 
-html.dark .btn-secondary {
-  color: #FAF8F5;
-  border-color: rgba(197, 168, 128, 0.4);
-}
+  html.dark .btn-secondary {
+    color: #FAF8F5;
+    border-color: rgba(197, 168, 128, 0.4);
+  }
 
-html.dark .btn-secondary:hover {
-  border-color: #C5A880;
-  background-color: #C5A880;
-  color: #191716;
+  html.dark .btn-secondary:hover {
+    border-color: #C5A880;
+    background-color: #C5A880;
+    color: #191716;
+  }
 }
 
 /* RTL Helpers */
@@ -382,10 +457,27 @@ html:not(.js-ready) .img-curtain-reveal {
   transform: translateX(0);
 }
 
+/* On mobile and tablet (< 1024px), translate vertically so horizontal offset never causes mobile scroll overflow */
+@media (max-width: 1023px) {
+  .reveal-left,
+  .reveal-right,
+  [dir="rtl"] .reveal-left,
+  [dir="rtl"] .reveal-right {
+    transform: translateY(28px);
+  }
+  .reveal-left.revealed,
+  .reveal-right.revealed,
+  [dir="rtl"] .reveal-left.revealed,
+  [dir="rtl"] .reveal-right.revealed {
+    transform: translateY(0);
+  }
+}
+
 /* 6. Architectural Image Mask / Curtain Wipe */
 .img-curtain-reveal {
   position: relative;
   overflow: hidden;
+  contain: paint;
 }
 
 .img-curtain-reveal::after {

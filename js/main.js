@@ -369,22 +369,60 @@ function initNavbar() {
   // Mobile menu toggle
   function toggleMobileMenu(forceClose = false) {
     if (!mobileMenu || !backdrop) return;
-    const isOpen = forceClose ? false : !mobileMenu.classList.contains('hidden');
-    if (isOpen) {
+    const isCurrentlyOpen = !mobileMenu.classList.contains('hidden');
+    const shouldClose = forceClose ? true : isCurrentlyOpen;
+
+    const toggleSvg = mobileToggle?.querySelector('svg');
+
+    if (shouldClose) {
       mobileMenu.classList.add('hidden');
       backdrop.classList.add('hidden');
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      if (lenisInstance && typeof lenisInstance.start === 'function') {
+        lenisInstance.start();
+      }
       mobileToggle?.setAttribute('aria-expanded', 'false');
+      if (toggleSvg) {
+        toggleSvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+      }
     } else {
       mobileMenu.classList.remove('hidden');
       backdrop.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+      if (lenisInstance && typeof lenisInstance.stop === 'function') {
+        lenisInstance.stop();
+      }
       mobileToggle?.setAttribute('aria-expanded', 'true');
+      if (toggleSvg) {
+        toggleSvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+      }
     }
   }
 
-  mobileToggle?.addEventListener('click', () => toggleMobileMenu());
+  mobileToggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMobileMenu();
+  });
   backdrop?.addEventListener('click', () => toggleMobileMenu(true));
+
+  // Close mobile menu when any navigation link or CTA button inside it is clicked
+  mobileMenu?.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => {
+      toggleMobileMenu(true);
+    });
+  });
+
+  // Client Login action handler
+  document.querySelectorAll('a[href="#login"]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (typeof window.showToast === 'function') {
+        window.showToast('Client Portal: Authentication is currently active for commissioned clients.');
+      }
+    });
+  });
 
   // Home dropdown desktop
   homeDropdownBtn?.addEventListener('click', (e) => {
@@ -464,6 +502,13 @@ function initCostEstimator() {
   const root = document.getElementById('cost-estimator');
   if (!root) return;
 
+  // Handle Home-Premium Estimator variant if present
+  const disciplineBtns = root.querySelectorAll('.estimator-discipline-btn');
+  if (disciplineBtns.length > 0) {
+    initPremiumEstimator(root, disciplineBtns);
+    return;
+  }
+
   const typeBtns = root.querySelectorAll('.estimator-type-btn');
   const slider = root.querySelector('#estimator-area-slider');
   const areaVal = root.querySelector('#estimator-area-val');
@@ -538,6 +583,95 @@ function initCostEstimator() {
   });
 
   calculate();
+}
+
+function initPremiumEstimator(root, disciplineBtns) {
+  const slider = root.querySelector('#estimator-sqft-slider');
+  const sqftDisplay = root.querySelector('#estimator-sqft-display');
+  const tierBtns = root.querySelectorAll('.estimator-tier-btn');
+  const costDisplay = root.querySelector('#estimator-cost-display');
+  const timeDisplay = root.querySelector('#estimator-time-display');
+  const rateDisplay = root.querySelector('#estimator-rate-sqft');
+  const bookBtn = root.querySelector('#estimator-book-btn');
+
+  let discipline = 'residential';
+  let sqft = 2500;
+  let tier = 'signature';
+
+  const rates = {
+    residential: { standard: 32, signature: 38, haute: 65 },
+    commercial: { standard: 28, signature: 32, haute: 55 },
+    kitchen: { standard: 48, signature: 60, haute: 95 },
+    turnkey: { standard: 36, signature: 44, haute: 75 }
+  };
+
+  const activeClasses = ['border-brand-secondary', 'bg-brand-secondary', 'text-brand-primary', 'font-bold'];
+  const inactiveClasses = ['border-[#3D3A36]', 'text-[#FAF8F5]'];
+
+  function update() {
+    const rate = rates[discipline]?.[tier] || 38;
+    const baseTotal = sqft * rate;
+    const low = Math.round(baseTotal * 0.95);
+    const high = Math.round(baseTotal * 1.18);
+
+    let minWeeks = 8;
+    let maxWeeks = 12;
+    if (sqft > 1500) { minWeeks = 10; maxWeeks = 14; }
+    if (sqft > 3500) { minWeeks = 14; maxWeeks = 18; }
+    if (sqft > 6000) { minWeeks = 18; maxWeeks = 24; }
+    if (tier === 'haute') { minWeeks += 2; maxWeeks += 4; }
+
+    if (costDisplay) costDisplay.textContent = `$${low.toLocaleString()} – $${high.toLocaleString()}`;
+    if (timeDisplay) timeDisplay.textContent = `${minWeeks} – ${maxWeeks} Weeks`;
+    if (rateDisplay) rateDisplay.textContent = `$${rate} / sq.ft`;
+    if (sqftDisplay) sqftDisplay.textContent = `${Number(sqft).toLocaleString()} sq.ft`;
+  }
+
+  disciplineBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      disciplineBtns.forEach(b => {
+        b.classList.remove(...activeClasses);
+        b.classList.add(...inactiveClasses);
+      });
+      btn.classList.remove(...inactiveClasses);
+      btn.classList.add(...activeClasses);
+      discipline = btn.dataset.discipline || 'residential';
+      update();
+    });
+  });
+
+  tierBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tierBtns.forEach(b => {
+        b.classList.remove(...activeClasses);
+        b.classList.add(...inactiveClasses);
+      });
+      btn.classList.remove(...inactiveClasses);
+      btn.classList.add(...activeClasses);
+      tier = btn.dataset.tier || 'signature';
+      update();
+    });
+  });
+
+  slider?.addEventListener('input', (e) => {
+    sqft = Number(e.target.value);
+    update();
+  });
+
+  bookBtn?.addEventListener('click', () => {
+    const disciplineMap = {
+      residential: 'Residential Architecture',
+      commercial: 'Commercial Workspaces',
+      kitchen: 'Modular Kitchens',
+      turnkey: 'Turnkey Renovation'
+    };
+    openConsultationModal({
+      discipline: disciplineMap[discipline] || 'Residential Architecture',
+      area: `${sqft.toLocaleString()} sq.ft`
+    });
+  });
+
+  update();
 }
 
 /* -------------------------------------------------------------

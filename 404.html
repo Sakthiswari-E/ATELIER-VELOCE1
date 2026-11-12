@@ -28,13 +28,13 @@
 
   <!-- HEADER & NAVBAR -->
   <header
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-[#FAF8F5]/90 dark:bg-[#0D0C0B]/90 backdrop-blur-sm border-b border-brand-border/40 dark:border-brand-border-dark/40 py-3.5 sm:py-5">
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-[#FAF8F5]/90 dark:bg-[#0D0C0B]/90 backdrop-blur-sm border-b border-brand-border/40 dark:border-brand-border-dark/40 py-2.5 min-[360px]:py-3.5 sm:py-5">
+    <div class="max-w-7xl mx-auto px-2.5 min-[360px]:px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between gap-2 sm:gap-4">
 
         <!-- Brand Logo -->
-        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none no-underline">
-          <div class="w-8 h-8 sm:w-10 sm:h-10 bg-brand-primary dark:bg-[#161514] text-[#FAF8F5] border border-brand-primary/80 dark:border-brand-secondary/60 flex items-center justify-center p-1.5 transition-all duration-300 group-hover:border-brand-secondary group-hover:shadow-lg group-hover:shadow-brand-secondary/10 shrink-0">
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0 min-w-0 select-none no-underline">
+          <div class="w-7 h-7 min-[360px]:w-8 min-[360px]:h-8 sm:w-10 sm:h-10 bg-brand-primary dark:bg-[#161514] text-[#FAF8F5] border border-brand-primary/80 dark:border-brand-secondary/60 flex items-center justify-center p-1.5 transition-all duration-300 group-hover:border-brand-secondary group-hover:shadow-lg group-hover:shadow-brand-secondary/10 shrink-0">
             <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full transition-transform duration-300 group-hover:scale-105">
               <path d="M3 7V3H7M29 3H33V7M33 29V33H29M7 33H3V29" stroke="#C5A880" stroke-width="1" stroke-linecap="round" opacity="0.65"/>
               <path d="M18 5L7.5 28.5H11.8L18 14.5L24.2 28.5H28.5L18 5Z" fill="currentColor"/>
@@ -43,10 +43,10 @@
             </svg>
           </div>
           <div class="flex flex-col">
-            <span class="font-serif text-sm xs:text-base sm:text-lg md:text-xl tracking-[0.18em] sm:tracking-[0.24em] font-semibold text-brand-primary dark:text-[#FAF8F5] group-hover:text-brand-secondary transition-colors uppercase leading-tight truncate">
+            <span class="font-serif text-xs min-[360px]:text-sm sm:text-lg md:text-xl tracking-[0.14em] min-[360px]:tracking-[0.18em] sm:tracking-[0.24em] font-semibold text-brand-primary dark:text-[#FAF8F5] group-hover:text-brand-secondary transition-colors uppercase leading-tight truncate">
               ATELIER VÉLOCE
             </span>
-            <span class="hidden xs:block text-[8px] sm:text-[9px] tracking-[0.28em] sm:tracking-[0.34em] uppercase text-brand-muted dark:text-[#A39B92] font-medium leading-none mt-0.5">
+            <span class="hidden sm:block text-[8px] sm:text-[9px] tracking-[0.28em] sm:tracking-[0.34em] uppercase text-brand-muted dark:text-[#A39B92] font-medium leading-none mt-0.5">
               Interior Architecture
             </span>
           </div>
@@ -102,12 +102,13 @@
             class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">
             Contact
           </a>
+          <a href="#login" class="nav-link-indicator px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary/80 hover:text-brand-secondary dark:text-[#FAF8F5]/80 dark:hover:text-brand-secondary transition-colors">Login</a>
         </nav>
 
         <!-- Header Controls & CTAs (Max 2 CTAs) -->
-        <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+        <div class="flex items-center gap-1 min-[360px]:gap-1.5 sm:gap-2.5 shrink-0">
           <button
-            class="rtl-toggle-btn w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors"
+            class="rtl-toggle-btn w-7 h-7 min-[360px]:w-8 min-[360px]:h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors"
             title="Toggle RTL / LTR" aria-label="Toggle text direction">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10" stroke-width="1.5" />
@@ -117,7 +118,7 @@
           </button>
 
           <button
-            class="theme-toggle-btn w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors"
+            class="theme-toggle-btn w-7 h-7 min-[360px]:w-8 min-[360px]:h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary hover:text-brand-secondary transition-colors"
             title="Toggle Dark/Light Mode" aria-label="Toggle theme">
             <svg class="theme-icon-sun w-4 h-4 text-brand-secondary hidden" fill="none" stroke="currentColor"
               viewBox="0 0 24 24">
@@ -145,7 +146,7 @@
           </button>
 
           <button id="mobile-menu-toggle"
-            class="xl:hidden w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary"
+            class="xl:hidden w-7 h-7 min-[360px]:w-8 min-[360px]:h-8 sm:w-9 sm:h-9 flex items-center justify-center border border-brand-border dark:border-brand-border-dark text-brand-primary dark:text-[#FAF8F5] hover:border-brand-secondary"
             aria-label="Toggle mobile menu">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -190,6 +191,7 @@
             class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Portfolio</a>
           <a href="contact.html"
             class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5">Contact</a>
+          <a href="#login" class="px-3.5 py-3 text-xs sm:text-sm tracking-wider uppercase font-medium text-brand-primary dark:text-[#FAF8F5] hover:bg-black/5 dark:hover:bg-white/5 flex items-center justify-between"><span>Client Login</span><span class="text-[10px] text-brand-secondary font-semibold uppercase">Portal &rarr;</span></a>
         </div>
 
         <div class="pt-4 border-t border-brand-border dark:border-brand-border-dark flex flex-col sm:flex-row gap-3">
@@ -199,6 +201,7 @@
           <a href="portfolio.html" class="btn-secondary w-full justify-center !py-3.5 text-xs">
             <span>Explore Lookbook</span>
           </a>
+          <a href="#login" id="mobile-login-btn" class="btn-secondary w-full justify-center !py-3.5 text-xs tracking-widest uppercase flex items-center gap-2"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/></svg><span>Client Login</span></a>
         </div>
       </div>
     </div>
@@ -381,9 +384,9 @@
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#7A736B] gap-4">
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#7A736B] gap-4 text-center sm:text-left">
         <div>© 2026 ATELIER VÉLOCE. All rights reserved. Architectural excellence since 2012.</div>
-        <div class="flex items-center gap-6">
+        <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
           <a href="about.html" class="hover:text-brand-secondary transition-colors no-underline">Architectural
             Integrity</a>
           <a href="contact.html" class="hover:text-brand-secondary transition-colors no-underline">Private
